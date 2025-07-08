@@ -1,0 +1,91 @@
+header
+{
+    display: grid;
+
+}
+
+div
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header img
+{
+    height: 40px;
+    width: auto;
+    
+}
+
+header button
+{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+header button::before
+{
+    content: "\2630";
+}
+
+header button.show::before
+{
+    font-size: 2em;
+    content: "\00d7";
+}
+
+.navigation
+{
+    display: none;
+}
+.navigation.show
+{
+    text-decoration: none;
+    display: block;
+}
+.navigation ul
+{
+    list-style-type: none;
+    justify-content: center;
+}
+.navigation a
+{
+  display: block;
+  padding: .8rem 10px;  
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+footer
+{
+    background-color: #eee;
+    text-align: center;
+}
+.social
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a
+{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border: #ccc solid 1px;
+   border-radius: 4px;
+}
+.social img
+{
+    height: 22px;
+    width: 22px;
+}
+.social a:hover
+{
+    background-color: #ddd;
+}

@@ -1,0 +1,50 @@
+header
+{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 10px 0px 10px 10px;
+    align-items: end;
+    border: solid 1px ;
+    column-gap: 8px;
+
+}
+img
+{ 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hamburger
+{
+    border: none; 
+    background: none;
+    color: navy;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger::after
+{
+    content: "\2630";
+    font-size: 1.5em;
+}
+
+.hamburger.show::after
+{
+    content: "\2715";
+}
+.navigation
+{
+    display: none;
+}
+.navigation.show
+{
+    display: block;
+}
+ul{
+    list-style-type: none;    
+}
+a{
+    text-decoration: none;
+}
+
