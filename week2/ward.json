@@ -1,0 +1,20 @@
+{
+    "family_name":"cox",
+    "move_in_date":"10-06-2022",
+    "number_of_people":5,
+    "visited_by_bishopric":true,
+    "family_members":
+    [
+        {
+            "name":"Allan L",
+            "gender":"Male",
+            "birthdate":"08-03-66"
+        },
+        {
+            "name":"Terrie L",
+            "gender":"Female",
+            "birthdate":"07-05-62"   
+        }
+    ]
+
+}
