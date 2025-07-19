@@ -1,0 +1,85 @@
+
+
+section
+{
+    background-color: antiquewhite;
+    display: grid;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: 24px auto 44px 44px;
+    padding: 10px 0px 10px 10px;
+    /* align-items: end; */
+    border: solid 1px ;
+    column-gap: 8px;
+
+}
+
+header >img
+{
+    align-self: center;
+}
+
+header > button
+{
+    align-self: center;
+}
+.business
+{
+    height: 260px;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 250px;
+    justify-content: center;
+}
+.card >h2 , .card>p, .card>img
+{
+    justify-self: center;
+}
+#carrd
+{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;   
+    margin: 0 auto; 
+}
+footer
+{
+    display: grid;
+}
+footer p, nav, h2
+{
+    justify-self: center;
+}
+#nav-menu
+{
+    display: none;
+}
+
+#nav-menu.show
+{
+    display: block;
+}
+
+a
+    {text-decoration: none;}
+a:hover
+{background-color: #ddd}
+
+.navigation >ul li
+{
+    padding: 5px;
+    border: solid #bbb;
+}

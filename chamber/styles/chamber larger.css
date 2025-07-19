@@ -1,0 +1,21 @@
+@media screen and (min-width: 350px)
+{
+    header
+    {
+        grid-template-columns: 24px auto 44px ;
+    }
+
+    h1{justify-self: center;}
+
+    #nav-button{display: none;}
+
+    #nav-menu{display: block;}
+
+    nav ul li
+    {
+        display: inline-block;
+        margin-right: 20px;
+        
+    }
+    
+}

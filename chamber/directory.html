@@ -8,18 +8,71 @@
     <meta name="author" content="Allan Cox WDD231">
     <meta property="og:title" content="ACox Chamber of Commerce directory page">
     <meta property="og:description" content="directory page for Improved Rexburg Chamber of Commerce Website">
-    <meta property="og:image" content="https://acoxwebdevelopment.github.io/wdd231/chamber/images/gradient-abstract-technology-company-logotype_52683-9702.avif
+    <meta property="og:image" content="https://acoxwebdevelopment.github.io/wdd231/chamber/images/gradient-abstract-technology-company-logotype_52683-9702.avif">
     <meta property="og:url" content="https://github.com/ACoxWebDevelopment/wdd231">
+    <link rel="stylesheet" href="styles/chamber base.css">
+    <link rel="stylesheet" href="styles/chamber larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD231</h1>
+        <img src="images/city-solid.svg" alt="site logo">
+        <h1>Improved Rexburg Chamber of Commerce</h1>
+        <img src="images/favicon.ico" alt="favicon">
+        <button id="nav-button">&#9776</button>
     </header>
+    <nav id="nav-menu">
+        
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">directory</a></li>
+            <li><a href="">join</a></li>
+        </ul>
+    </nav>
     <main>
+        <section class="cards" id="carrd">
+            <div class="card">
+                <h2>Business Name</h2>
+                <h2>Business Tag Line</h2>
+                <img src="images/gradient-abstract-technology-company-logotype_52683-9702.avif" alt="business logo" class="business">
+                <p>email: info@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
+            </div>
+
+            <div class="card">
+                <h2>Business Name</h2>
+                <h2>Business Tag Line</h2>
+                <img src="images/gradient-abstract-technology-company-logotype_52683-9702.avif" alt="business logo" class="business">
+                <p>email: info@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
+            </div>
+        </section>
 
     </main>
     <footer>
-
+        <div>
+             <h2>Rexburg Improved Chamber of Commerce</h2>
+            <p>some address</p>
+            <p>Rexburg, Idaho</p>
+            <p>info@rexburgcc.org</p>
+            <p>208-111-1234</p>
+        </div>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="https://www.linkedin.com/feed/"><img src="images/linkedin.svg" alt="linkedin logo"></a></li>
+            <li><a href="https://x.com/?lang=en-id"><img src="images/twitter-x.svg" alt="x logo"></a></li>
+            <li><a href="https://www.github.com/"><img src="images/github.svg" alt="github logo"></a></li>
+        </ul>
+    </nav>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Allan Cox</p>
+            <p id="currentYear"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>    
 </body>
 </html>
