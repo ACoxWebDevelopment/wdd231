@@ -17,6 +17,7 @@ header
 
 }
 
+
 header >img
 {
     align-self: center;
@@ -29,6 +30,17 @@ header > button
 .business
 {
     height: 260px;
+}
+
+#nav-button::after
+{
+    content: "\2630";
+    font-size: 1.5em;
+}
+
+#nav-button.show::after
+{
+    content: "\2715";
 }
 
 .card {
