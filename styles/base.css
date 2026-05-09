@@ -1,0 +1,211 @@
+/* ************************Header styling********************************* */
+header
+{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: 2px #ccc solid;
+    column-gap: 10px;
+}
+
+header img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span
+{
+    font-size: 1.2;
+    color: green;
+}
+
+/* *************************Hamburger Menu Styling**************************** */
+.hamburger
+{
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before
+{
+    content:"\2630" ;
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before
+{
+    content: "\00D7";
+}
+
+.navigation
+{
+    display: none;
+}
+
+.navigation.show
+{
+    display: flex
+}
+
+.navigation ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a
+{
+    display: block;
+    padding: .8rem 10px;
+    color: green;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.navigation li:hover
+{
+
+    background-color: green;
+}
+
+.navigation a:hover
+{
+    color: antiquewhite;
+}
+
+/* *******************************Footer Styling*********************************** */
+
+footer
+{
+    background-color: #ccc;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.social a:hover
+{
+    background-color: #bbb;
+}
+
+.social img
+{
+    width: 22px;
+    height: 22px;
+}
+
+
+/******************************* Heading Styling ***********************************/
+h1
+{
+    color: green;
+    margin-left: 10px;
+}
+
+/* **************image styling************** */
+.myPhoto img
+{
+    width: 30px;
+    height: auto;
+}
+
+/* ***************************Wayfinding************************** */
+
+#current-page
+{
+ background-color: #bbb;   
+}
+
+/* ********************Course styling */
+
+#webCourses
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bbb;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid green;
+    border-radius: 5px;
+    
+}
+
+p.completed, p.pending
+{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* box-shadow created with w3 Schools CSS Box Shadow Generation Tool */
+    box-shadow: 18px 4px 30px 3px rgba(0, 0, 0, 0.3);
+    
+}
+
+p.completed
+{
+    color: aliceblue;
+    background-color: green;
+
+}
+
+p.pending
+{
+    background-color: yellow;
+}
+#courseComplete
+{
+    background: green;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+#coursePending
+{
+    background: yellow;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+#pendingWrapper
+{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#completeWrapper
+{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
