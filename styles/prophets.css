@@ -1,0 +1,21 @@
+#cards {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section
+{
+    max-width: 300px;
+    background-color: rgb(132, 187, 242);
+    text-align: center;
+    margin: 8px;
+}
+
+img
+{
+    height: 200px;
+    width: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

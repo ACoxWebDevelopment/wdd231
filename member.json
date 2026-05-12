@@ -1,0 +1,31 @@
+{
+   "family name": "Brown",
+   "Move in Date": "Sep 21st 2025",
+   "family size": 4,
+   "Bishopric Visit": true,
+   "family members":
+   [{
+        "first name": "Joe",
+        "gender": "Male",
+        "Birthdate": "Aug 25th 1965"
+   },
+
+   {
+    "first name": "Sue",
+    "gender": "Female",
+    "Birthdate": "Sep 10th 1964"
+   },
+   {
+    "first name": "Greg",
+    "gender":"Male",
+    "Birthdate": "March 6th 1995"
+   },
+   {
+    "first name": "Tiffany",
+    "gender":"Female",
+    "Birthdate": "April 3rd 1997"
+   }
+
+    ]
+
+}
