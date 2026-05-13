@@ -1,0 +1,68 @@
+[{
+    "CompanyName": "The Grill",
+    "CompanyAddress": "123 E Main",
+    "CompanyPhone": "406-111-1111",
+    "CompanyURL": "www.thegrill.com",
+    "CompanyImage" :"../images/feather.svg",
+    "MembershipLevel" : "Bronze"
+},
+
+{
+    "CompanyName": "Saddle Shop",
+    "CompanyAddress": "123 W Main",
+    "CompanyPhone": "406-111-1112",
+    "CompanyURL": "www.saddleshop.com",
+    "CompanyImage" :"../images/github.svg",
+    "MembershipLevel" : "Silver"
+},
+
+{
+    "CompanyName": "Pie Shop",
+    "CompanyAddress": "123 N Main",
+    "CompanyPhone": "406-111-1113",
+    "CompanyURL": "www.pieshop.com",
+    "CompanyImage" :"../images/home.svg",
+    "MembershipLevel" : "Gold"
+},
+
+
+{
+    "CompanyName": "Optometry Shop",
+    "CompanyAddress": "123 S Main",
+    "CompanyPhone": "406-111-1114",
+    "CompanyURL": "www.optometryshop.com",
+    "CompanyImage" :"../images/linkedin.svg",
+    "MembershipLevel" : "Silver"
+},
+
+{
+    "CompanyName": "Hardware Store",
+    "CompanyAddress": "321 S Main",
+    "CompanyPhone": "406-111-1115",
+    "CompanyURL": "www.hardwarestore.com",
+    "CompanyImage" :"../images/microsoft-teams.svg",
+    "MembershipLevel" : "Bronze"
+},
+
+{
+    "CompanyName": "Auto Parts Store",
+    "CompanyAddress": "321 N Main",
+    "CompanyPhone": "406-111-1115",
+    "CompanyURL": "www.autopartsstore.com",
+    "CompanyImage" :"../images/carquestlogo.png",
+    "MembershipLevel" : "Silver"
+},
+
+{
+    "CompanyName": "Medical Clinic",
+    "CompanyAddress": "321 W Main",
+    "CompanyPhone": "406-111-1116",
+    "CompanyURL": "www.medicalclinic.com",
+    "CompanyImage" :"../images/kit-medical-solid-full.svg",
+    "MembershipLevel" : "Silver"
+}
+
+
+
+
+]
