@@ -1,5 +1,5 @@
 const businesslisting = document.querySelector("#businesses");
-const url = "members.json";
+const url = "data/members.json";
 let busData= [];
 const viewbutton = document.querySelector(".grid")
 viewbutton.addEventListener("click", toggleView);

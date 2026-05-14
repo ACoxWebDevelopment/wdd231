@@ -19,8 +19,8 @@ header img
 
 header span
 {
-    font-size: 1.2;
-    color: green;
+    font-size: 1.2px;
+    color: darkgreen;
 }
 
 /* *************************Hamburger Menu Styling**************************** */
@@ -28,7 +28,7 @@ header span
 {
     background: none;
     border: none;
-    color: green;
+    color: darkgreen;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -65,7 +65,7 @@ header span
 {
     display: block;
     padding: .8rem 10px;
-    color: green;
+    color: darkgreen;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
 }
@@ -74,7 +74,7 @@ header span
 .navigation li:hover
 {
 
-    background-color: green;
+    background-color: darkgreen;
 }
 
 .navigation a:hover
@@ -124,7 +124,7 @@ footer
 /******************************* Heading Styling ***********************************/
 h1
 {
-    color: green;
+    color: darkgreen;
     margin-left: 10px;
 }
 
@@ -139,7 +139,14 @@ h1
 
 #current-page
 {
- background-color: #bbb;   
+ background-color: #ddd;  
+ color: darkgreen; 
+}
+
+#current-page:hover
+{
+    background-color: darkgreen;
+    color: antiquewhite;
 }
 
 /* ********************Course styling */
@@ -170,7 +177,7 @@ p.completed, p.pending
 p.completed
 {
     color: aliceblue;
-    background-color: green;
+    background-color: darkgreen;
 
 }
 
@@ -180,7 +187,7 @@ p.pending
 }
 #courseComplete
 {
-    background: green;
+    background: darkgreen;
     height: 30px;
     width: 30px;
     margin: 10px;
