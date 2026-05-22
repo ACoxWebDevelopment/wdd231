@@ -1,4 +1,6 @@
 #current-weather, #forecast-weather
 {
-    background-color: tan;
+    background-color: rgb(229, 213, 192);
+    padding: 10px;
+    margin: 5px;
 }
