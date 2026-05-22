@@ -216,3 +216,22 @@ p.pending
     align-items: center;
     justify-content: center;
 }
+
+/* ***********Home Page specific*************** */
+
+#hero
+{
+    background-image: url(../chamber/images/mountain.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    position: relative;
+}
+
+#keynote
+{
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+}

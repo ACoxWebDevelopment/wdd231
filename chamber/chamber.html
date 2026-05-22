@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <script src="scripts/home.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +29,43 @@
         </ul>
     </nav>
     <main>
+        <section id="hero">
+            <button id="keynote">Keynote Tickets</button>
+        </section>
+        
         <h1 id="current"></h1>
+        <section>
+            <h2>Events</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur natus perspiciatis qui totam aliquid velit voluptatum et eius, exercitationem libero non voluptates doloremque aliquam vero fugiat eos optio tempora porro!
+            </p>
+        </section>
+
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <p id="town"></p>
+            <img src="" alt="weather icon" id="weather-icon">
+            <p id="current-temp"></p>
+            <p id="weathDesc"></p>
+            <p id="tempHigh"></p>
+            <p id="tempLo"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </section>
+
+        <section id="forecast-weather">
+            <h2>Weather forecast</h2>
+            <p id="todayTempHigh"></p>
+            <p id="tomorrowTempHigh"></p>
+            <p id="dayAfterTempHigh"></p>
+        </section>
+
+        <section>
+            <h2>Business Spotlights</h2>
+            <div id="spotlightBusinesses"></div>
+        </section>
+
     </main>
     <footer>
         <div class="social">
