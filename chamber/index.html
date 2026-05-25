@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Allan Cox">
-    <meta name="description" content="Home Page for WDD231 Chamber of Commerce Web Principles Practice Website" >
+    <meta name="description" content="Home Page for WDD231 Chamber of Commerce Web Principles Practice Website">
     <title>Chamber Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,22 +17,24 @@
     <link rel="stylesheet" href="../styles/larger.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/weatherlarger.css">
     <meta property="og:title" content="Chamber Home Page">
     <meta property="og:description" content="Home Page for WDD231 Chamber of Commerce Web Principles Practice Website">
-    <meta property="og:image" content="https://aCoxWebDevelopment.github.io/wdd231/images/aCoxwdd231screenshot.png"> 
-    <meta property="og:url" content="https://aCoxWebDevelopment.github.io/wdd231">   
+    <meta property="og:image" content="https://aCoxWebDevelopment.github.io/wdd231/images/aCoxwdd231screenshot.png">
+    <meta property="og:url" content="https://aCoxWebDevelopment.github.io/wdd231">
 
     <script src="scripts/home.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
 </head>
+
 <body>
     <header>
         <img src="../images/home.svg" alt="site logo" height="512" width="512">
         <span>Chamber Website</span>
         <button id="ham-btn" class="hamburger"></button>
-    </header> 
+    </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="directory.html">Directory</a></li>
@@ -44,49 +47,70 @@
         <div id="hero">
             <button id="keynote">Keynote Tickets</button>
         </div>
-        
+
         <h1 id="current"></h1>
-        <section>
-            <h2>Events</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur natus perspiciatis qui totam aliquid velit voluptatum et eius, exercitationem libero non voluptates doloremque aliquam vero fugiat eos optio tempora porro!
-            </p>
-        </section>
+        <div class="weather-large">
+            <section class="heading-bars">
+                <h2>Events</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur natus perspiciatis qui totam
+                    aliquid velit voluptatum et eius, exercitationem libero non voluptates doloremque aliquam vero
+                    fugiat
+                    eos optio tempora porro!
+                </p>
+            </section>
 
-        <section id="current-weather">
-            <h2>Current Weather</h2>
-            <p id="town"></p>
-            <img src="images/github.svg" alt="weather icon" id="weather-icon">
-            <p id="current-temp"></p>
-            <p id="weathDesc"></p>
-            <p id="tempHigh"></p>
-            <p id="tempLo"></p>
-            <p id="humidity"></p>
-            <p id="sunrise"></p>
-            <p id="sunset"></p>
-        </section>
+            <section class="heading-bars">
+                <h2>Current Weather</h2>
 
-        <section id="forecast-weather">
-            <h2>Weather forecast</h2>
-            <p id="todayTempHigh"></p>
-            <p id="tomorrowTempHigh"></p>
-            <p id="dayAfterTempHigh"></p>
-        </section>
+                <section id="current-weather">
 
-        <section>
-            <h2>Business Spotlights</h2>
-            <div id="spotlightBusinesses"></div>
-        </section>
+                    <p id="town"></p>
+                    <img src="images/github.svg" alt="weather icon" id="weather-icon">
+                    <p id="current-temp"></p>
+                    <p id="weathDesc"></p>
+                    <p id="tempHigh"></p>
+                    <p id="tempLo"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </section>
+            </section>
+
+            <section class="heading-bars">
+                <h2>Weather forecast</h2>
+
+                <section id="forecast-weather">
+                    <p id="todayTempHigh"></p>
+                    <p id="tomorrowTempHigh"></p>
+                    <p id="dayAfterTempHigh"></p>
+                </section>
+            </section>
+        </div>
+
+            <section class="heading-bars">
+                <h2>Business Spotlights</h2>
+
+                <section>
+                    <div id="spotlightBusinesses"></div>
+                </section>
+            </section>
+        
+
+
 
     </main>
     <footer>
         <div class="social">
-            <a href="https://aCoxWebDevelopment.github.io/wdd231"><img src="../images/github.svg" alt="github logo" width="32" height="32"></a>
-            <a href="https://www.linkedin.com/in/allan-cox-39394150/"><img src="../images/linkedin.svg" alt="linkedin logo" width="32" height="32"></a>
-            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="../images/microsoft-teams.svg" alt="microsoft teams logo" width="32" height="32"></a>
+            <a href="https://aCoxWebDevelopment.github.io/wdd231"><img src="../images/github.svg" alt="github logo"
+                    width="32" height="32"></a>
+            <a href="https://www.linkedin.com/in/allan-cox-39394150/"><img src="../images/linkedin.svg"
+                    alt="linkedin logo" width="32" height="32"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="../images/microsoft-teams.svg"
+                    alt="microsoft teams logo" width="32" height="32"></a>
         </div>
 
-        <p id ="copyYear"></p>
+        <p id="copyYear"></p>
         <p id="modified">Last Modified</p>
     </footer>
 

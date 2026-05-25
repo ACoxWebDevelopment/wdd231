@@ -1,0 +1,10 @@
+@media only screen and (min-width: 38rem)
+{
+    .weather-large
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+
+    }
+}

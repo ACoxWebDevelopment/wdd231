@@ -4,3 +4,10 @@
     padding: 10px;
     margin: 5px;
 }
+.heading-bars h2
+{
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
