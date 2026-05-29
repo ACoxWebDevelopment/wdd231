@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Allan Cox">
+    <meta name="description" content="Home Page for WDD231 Chamber of Commerce Web Principles Practice Website">
+    <title>Chamber Join Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:description" content="Home Page for WDD231 Chamber of Commerce Web Principles Practice Website">
+    <meta property="og:image" content="https://aCoxWebDevelopment.github.io/wdd231/images/aCoxwdd231screenshot.png">
+    <meta property="og:url" content="https://aCoxWebDevelopment.github.io/wdd231">
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/home.svg" alt="site logo" height="512" width="512">
+        <span>Chamber Website</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="navitems" id="current-page" href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="current"></h1>
+
+        <section id="formAndLevel">
+            <form method="GET" action="thankyou.html" class="designOne">
+
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Orginizational Title <input type="text" name="title" autocomplete="organization-title"
+                        pattern="[A-Za-z -]{7,}"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="406-555-1234"></label>
+                <label>Company Name <input type="text" name="company" required title="company-name"
+                        autocomplete="organization"></label>
+
+
+
+                <h3>Select Membership Level</h3>
+                <label><input type="radio" name="level" value="np">NP Membership is for non profit organizations and
+                    there
+                    is no fee</label>
+                <label><input type="radio" name="level" value="gold" checked> Gold Level</label>
+                <label><input type="radio" name="level" value="silver"> Silver Level</label>
+                <label><input type="radio" name="level" value="bronze"> Bronze Level</label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <label>Business Description<input type="textarea" title="description" name="description"></label>
+
+
+                <label><input type="submit" value="Apply for Membership"></label>
+            </form>
+
+            <div id="membership-cards">
+                <div class="levelCard">
+                    <h2>Non Profit Level</h2>
+                    <button id="npCardButton">learn more</button>
+                </div>
+
+                <div class="levelCard">
+                    <h2>Bronze Level</h2>
+                    <button id="bronzeCardButton">learn more</button>
+                </div>
+
+                <div class="levelCard">
+                    <h2>Silver Level</h2>
+                    <button id="silverCardButton">learn more</button>
+                </div>
+
+                <div class="levelCard">
+                    <h2>Gold Level</h2>
+                    <button id="goldCardButton">learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <dialog id="dialogBox">
+            <div id="top-row">
+                <h3 id=membershipLevel></h3>
+                <button id="closeButton">X</button>
+            </div>
+
+            <div id="level-details"></div>
+
+        </dialog>
+
+    </main>
+
+
+
+    <footer>
+        <div class="social">
+            <a href="https://aCoxWebDevelopment.github.io/wdd231"><img src="../images/github.svg" alt="github logo"
+                    width="32" height="32"></a>
+            <a href="https://www.linkedin.com/in/allan-cox-39394150/"><img src="../images/linkedin.svg"
+                    alt="linkedin logo" width="32" height="32"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="../images/microsoft-teams.svg"
+                    alt="microsoft teams logo" width="32" height="32"></a>
+        </div>
+
+        <p id="copyYear"></p>
+        <p id="modified">Last Modified</p>
+    </footer>
+
+</body>
+
+</html>

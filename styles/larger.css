@@ -32,4 +32,16 @@
    {
     border: none;
    }
+
+   /************* styling for the join page************** */
+   #formAndLevel 
+   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   .levelCard
+   {
+    margin: 30px;
+   }
 }

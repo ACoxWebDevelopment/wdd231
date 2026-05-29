@@ -7,3 +7,4 @@ copy.innerHTML = `\u00A9 ${today.getFullYear()}`; //get current year and place i
 mod.innerHTML = `Last Modified ${document.lastModified}`;
 
 
+  document.getElementById("timestamp").value = new Date().toISOString();

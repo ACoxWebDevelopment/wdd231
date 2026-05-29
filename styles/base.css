@@ -235,3 +235,85 @@ p.pending
    bottom: 20px;
    right: 20px;
 }
+
+/* **********************Style dialog element*/
+#course-details
+{
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop
+{
+    background-color: rgb(0 0 0 / 50%)    
+}
+
+dialog button
+{
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+/* **************************form styles****** */
+form, #thankYou
+{
+    max-width: 400px;
+    background-color: rgb(247, 222, 190);
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    padding: 10px;
+}
+
+label, input
+{
+    margin: 5px
+}
+
+/* ***********membership level card styles**************  */
+
+@keyframes fadeColor {
+    from {background-color: white;
+    color: white;
+    border: transparent;}
+    to {background-color:  rgb(247, 222, 190);
+        color: black;
+    border: solid black 2px;}
+}
+
+
+
+.levelCard
+{
+    animation: fadeColor 3s ease-in 2s 1 backwards ;
+    max-width: 400px;
+    background-color: rgb(247, 222, 190);
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    padding: 10px;
+    text-align: center;
+}
+
+.levelCard button
+{
+    animation: fadeColor 3s ease-in 2s 1 backwards ;
+}
+
+::backdrop
+{
+    background-color: rgb(0 0 0 / 40%);
+}
+
+

@@ -2,12 +2,23 @@ const results = document.getElementById("webCourses");
 const listAll = document.getElementById("all");
 const listWeb = document.getElementById("web");
 const listProgramming = document.getElementById("programming");
-const legendComplete = document.createElement ("div");
-const legendCompleteWrapper = document.createElement ("div");
-const legendCompleteText = document.createElement ("p");
-const legendPendingWrapper = document.createElement ("div");
+const legendComplete = document.createElement("div");
+const legendCompleteWrapper = document.createElement("div");
+const legendCompleteText = document.createElement("p");
+const legendPendingWrapper = document.createElement("div");
 const legendPending = document.createElement("div");
-const legendPendingText = document.createElement ("p");
+const legendPendingText = document.createElement("p");
+
+const courseDetails = document.querySelector("#course-details");
+const courseNumber = document.querySelector("#course-number");
+const closeButton = document.querySelector("#closeButton");
+const courseName = document.querySelector("#course-name");
+const courseCredits = document.querySelector("#course-credits");
+const courseMajor = document.querySelector("#course-major");
+const courseDescription = document.querySelector("#course-description");
+const courseSkills = document.querySelector("#course-skills");
+
+
 let filteredWeb = [];
 let filteredProgramming = [];
 let unfilteredCourses = [];
@@ -109,6 +120,7 @@ function allCourses() {
         }
         details.textContent = `${element.subject} ${element.number}`;
         results.appendChild(details);
+        details.addEventListener("click", () => buildDialog(element));
     });
     let allCredits = document.createElement("p");
     allCredits.textContent = `total credits of listed courses is ${unfilteredCourses.reduce(myCredits, 0)}`;
@@ -135,75 +147,94 @@ function allCourses() {
 function webCourses() {
     results.textContent = "";
     filteredWeb = [];
-    for (let i = 0; i < courses.length; i++) {
-        if (courses[i].subject == "WDD") {
-            filteredWeb.push(courses[i].credits);
-            let details = document.createElement("p");
-            if (courses[i].completed) {
-                details.className = "completed";
-            } else {
-                details.className = "pending"
+    courses.forEach(element => 
+        {
+            if (element.subject == "WDD") {
+                filteredWeb.push(element.credits);
+                let details = document.createElement("p");
+                if (element.completed) {
+                    details.className = "completed";
+                } else {
+                    details.className = "pending"
+                }
+                details.textContent = `${element.subject} ${element.number}`;
+                results.appendChild(details);
+                details.addEventListener("click", () => buildDialog(element));
             }
-            details.textContent = `${courses[i].subject} ${courses[i].number}`;
-            results.appendChild(details);
-        }
-    }
-    let totalWebCredits = document.createElement("p")
-    totalWebCredits.textContent = `total credits of listed courses is ${filteredWeb.reduce(myCredits, 0)}`;
-    results.appendChild(totalWebCredits)
-
-    legendCompleteText.textContent = (" = Complete");
-    legendCompleteWrapper.id = ("completeWrapper");
-    legendCompleteWrapper.appendChild(legendComplete);
-    legendCompleteWrapper.appendChild(legendCompleteText);
-    legendComplete.id = ("courseComplete");
-    results.appendChild(legendCompleteWrapper);
-
-    legendPending.id = ("coursePending");
-    legendPendingText.textContent = (" = Pending");
-    legendPendingWrapper.id = ("pendingWrapper")
-    legendPendingWrapper.appendChild(legendPending)
-    legendPendingWrapper.appendChild(legendPendingText);
-    results.appendChild(legendPendingWrapper);
-}
-
-function programCourses() {
-    results.textContent = "";
-    filteredProgramming = [];
-    for (let i = 0; i < courses.length; i++) {
-        if (courses[i].subject == "CSE") {
-            filteredProgramming.push(courses[i].credits);
-            let details = document.createElement("p");
-            if (courses[i].completed) {
-                details.className = "completed";
-            } else {
-                details.className = "pending"
-            }
-            details.textContent = `${courses[i].subject} ${courses[i].number}`;
-            results.appendChild(details);
-        }
-    }
-    let totalProgramCredits = document.createElement("p")
-    totalProgramCredits.textContent = `total credits of listed courses is ${filteredProgramming.reduce(myCredits, 0)}`;
-    results.appendChild(totalProgramCredits)
+        });
+        let totalWebCredits = document.createElement("p")
+        totalWebCredits.textContent = `total credits of listed courses is ${filteredWeb.reduce(myCredits, 0)}`;
+        results.appendChild(totalWebCredits)
 
         legendCompleteText.textContent = (" = Complete");
-    legendCompleteWrapper.id = ("completeWrapper");
-    legendCompleteWrapper.appendChild(legendComplete);
-    legendCompleteWrapper.appendChild(legendCompleteText);
-    legendComplete.id = ("courseComplete");
-    results.appendChild(legendCompleteWrapper);
+        legendCompleteWrapper.id = ("completeWrapper");
+        legendCompleteWrapper.appendChild(legendComplete);
+        legendCompleteWrapper.appendChild(legendCompleteText);
+        legendComplete.id = ("courseComplete");
+        results.appendChild(legendCompleteWrapper);
 
-    legendPending.id = ("coursePending");
-    legendPendingText.textContent = (" = Pending");
-    legendPendingWrapper.id = ("pendingWrapper")
-    legendPendingWrapper.appendChild(legendPending)
-    legendPendingWrapper.appendChild(legendPendingText);
-    results.appendChild(legendPendingWrapper);
-}
+        legendPending.id = ("coursePending");
+        legendPendingText.textContent = (" = Pending");
+        legendPendingWrapper.id = ("pendingWrapper")
+        legendPendingWrapper.appendChild(legendPending)
+        legendPendingWrapper.appendChild(legendPendingText);
+        results.appendChild(legendPendingWrapper);
+    }
 
-function myCredits(total, num) {
-    return total + num;
-}
+function programCourses() {
+            results.textContent = "";
+            filteredProgramming = [];
+            courses.forEach(element => {
+                if (element.subject == "CSE") {
+                    filteredProgramming.push(element.credits);
+                    let details = document.createElement("p");
+                    if (element.completed) {
+                        details.className = "completed";
+                    } else {
+                        details.className = "pending"
+                    }
+                    details.textContent = `${element.subject} ${element.number}`;
+                    results.appendChild(details);
+                    details.addEventListener("click", () => buildDialog(element));
+                }
+            })
+
+
+            let totalProgramCredits = document.createElement("p")
+            totalProgramCredits.textContent = `total credits of listed courses is ${filteredProgramming.reduce(myCredits, 0)}`;
+            results.appendChild(totalProgramCredits)
+
+            legendCompleteText.textContent = (" = Complete");
+            legendCompleteWrapper.id = ("completeWrapper");
+            legendCompleteWrapper.appendChild(legendComplete);
+            legendCompleteWrapper.appendChild(legendCompleteText);
+            legendComplete.id = ("courseComplete");
+            results.appendChild(legendCompleteWrapper);
+
+            legendPending.id = ("coursePending");
+            legendPendingText.textContent = (" = Pending");
+            legendPendingWrapper.id = ("pendingWrapper")
+            legendPendingWrapper.appendChild(legendPending)
+            legendPendingWrapper.appendChild(legendPendingText);
+            results.appendChild(legendPendingWrapper);
+        };
+
+
+    function myCredits(total, num) {
+        return total + num;
+    }
+
+    closeButton.addEventListener("click", () => { courseDetails.close() });
+
+    function buildDialog(element) {
+        courseNumber.innerHTML = `${element.subject} ${element.number}`
+        courseName.innerHTML = element.title;
+        courseCredits.innerHTML = `${element.credits} credits`;
+        courseMajor.innerHTML = `Certificate: ${element.certificate}`;
+        courseDescription.innerHTML = element.description;
+        courseSkills.innerHTML = `Technology: ${element.technology}`;
+        courseDetails.show();
+    }
+
 
 

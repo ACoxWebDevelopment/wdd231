@@ -4,6 +4,9 @@ const navLinks = document.querySelector("#nav-bar");
 const navCurrent = document.querySelector("#current-page");
 const wayFind = document.querySelector("#current");
 
+console.log(wayFind);
+console.log(navCurrent);
+
 // toggle class on and off
 
 
