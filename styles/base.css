@@ -294,7 +294,7 @@ label, input
 
 .levelCard
 {
-    animation: fadeColor 3s ease-in 2s 1 backwards ;
+    animation: fadeColor 2s ease-in 1s 1 backwards ;
     max-width: 400px;
     background-color: rgb(247, 222, 190);
     margin: 5px;
@@ -308,7 +308,7 @@ label, input
 
 .levelCard button
 {
-    animation: fadeColor 3s ease-in 2s 1 backwards ;
+    animation: fadeColor 2s ease-in 1s 1 backwards ;
 }
 
 ::backdrop
