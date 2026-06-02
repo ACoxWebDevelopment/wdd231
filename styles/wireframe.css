@@ -1,0 +1,22 @@
+h1, h2, h3
+{
+    font-family: "PT Serif", serif, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: darkgreen;
+}
+
+#h1-button-div
+{
+    display: flex;
+}
+
+main
+{
+    background-color: rgb(247, 222, 190);
+    padding: 10px;
+}
+a
+{
+    margin: 10px;
+}
