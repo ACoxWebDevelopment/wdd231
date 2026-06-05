@@ -1,9 +1,9 @@
-@media only screen and (min-width: 38rem)
+@media only screen and (min-width: 69rem)
 {
 
     header, main, nav, footer
     {
-        max-width: 900px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -12,28 +12,9 @@
         grid-template-columns: 24px auto;
     }
 
-   .hamburger
-   {
-    display: none;
-   } 
-   .navigation
-   {
-    display: block;
-   }
 
-   .navigation ul
-   {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    
-   }
-   .navigation a
-   {
-    border: none;
-   }
 
-   /************* styling for the join page************** */
+     /************* styling for the join page************** */
    #formAndLevel 
    {
     display: grid;
@@ -44,4 +25,58 @@
    {
     margin: 30px;
    }
+
+   /* ************** discover page styling********* */
+
+.card
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    background-color: green;
+}
+.placeCard
+{
+    width: auto;
+    max-width: 560px;
+    display: grid;
+    grid-template-areas:
+    "photo title"
+    "photo description"
+    "photo location"
+    "photo button"
+    ;
+    
+}
+.placeCard figure
+{
+    grid-area: photo;
+}
+
+.placeCard figure img
+
+{
+    width: 300px;
+    height: 200px;
+}
+
+.placeCard h2
+{
+    grid-area: title;
+}
+
+.placeCard p
+{
+    grid-area: description;
+}
+
+.placeCard address
+{
+    grid-area: location;
+}
+
+.placeCard button
+{
+    grid-area: button;
+}
 }

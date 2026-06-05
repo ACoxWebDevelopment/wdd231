@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 class chamber project directory page designed to show mastery of web development concepts">
     <meta name="author" content="Allan Cox">
-    <title>Directory</title>
+    <meta name="description" content="Discover page for WDD231 Chamber of Commerce Web Principles Practice Website">
+    <title>Discover Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -16,50 +16,49 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/medium.css">
     <link rel="stylesheet" href="../styles/larger.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <meta property="og:description" content="WDD 231 class chamber project directory page designed to show mastery of web development concepts">
+    <meta property="og:title" content="Chamber Discover Page">
+    <meta property="og:description" content="Discover Page for WDD231 Chamber of Commerce Web Principles Practice Website">
     <meta property="og:image" content="https://aCoxWebDevelopment.github.io/wdd231/images/aCoxwdd231screenshot.png">
-    <meta property="og:title" content="Directory">
     <meta property="og:url" content="https://aCoxWebDevelopment.github.io/wdd231">
+
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
     <header>
         <img src="../images/home.svg" alt="site logo" height="512" width="512">
-        <span>Chamber Directory Page</span>
+        <span>
+            Chamber Discover Page
+        </span>
         <button id="ham-btn" class="hamburger"></button>
+        
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#" id="current-page">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a class="navitems" href="index.html">Home</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" id="current-page">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1 id="current"></h1>
-        <h2>Member Businesses</h2>
-        <h3>Press to toggle between grid and list view</h3>
-        <button class="grid">List View</button>
-        <div id="businesses"></div>
+        <h1 id ="current"></h1>
+        <section class="card"></section>
     </main>
     <footer>
         <div class="social">
-            <a href="https://aCoxWebDevelopment.github.io/wdd231"><img src="images/github.svg" alt="github logo"
+            <a href="https://aCoxWebDevelopment.github.io/wdd231"><img src="../images/github.svg" alt="github logo"
                     width="32" height="32"></a>
-            <a href="https://www.linkedin.com/in/allan-cox-39394150/"><img src="images/linkedin.svg" alt="linkedin logo"
-                    width="32" height="32"></a>
-            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="images/microsoft-teams.svg"
+            <a href="https://www.linkedin.com/in/allan-cox-39394150/"><img src="../images/linkedin.svg"
+                    alt="linkedin logo" width="32" height="32"></a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="../images/microsoft-teams.svg"
                     alt="microsoft teams logo" width="32" height="32"></a>
-
-
-            <p id="copyYear"></p>
-            <p id="modified"></p>
         </div>
+
+        <p id="copyYear"></p>
+        <p id="modified">Last Modified</p>
     </footer>
 
 </body>

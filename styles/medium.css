@@ -1,3 +1,5 @@
+@media only screen and (min-width: 38rem)
+{
 /* ************************Header styling********************************* */
 header
 {
@@ -25,11 +27,7 @@ header span
 /* *************************Hamburger Menu Styling**************************** */
 .hamburger
 {
-    background: none;
-    border: none;
-    color: darkgreen;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
 }
 
 .hamburger::before
@@ -45,20 +43,21 @@ header span
 
 .navigation
 {
-    display: none;
+    display: block;
 }
 
-.navigation.show
-{
-    display: flex
-}
+ .navigation ul
+   {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+   }
+   .navigation a
+   {
+    border: none;
+   }
 
-.navigation ul
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .navigation a
 {
@@ -312,37 +311,17 @@ label, input
 
 /* *****************discover page styling******** */
 
-.card
-{
-    background-color: darkgreen;
-    display: flex;
-    justify-content:  center;
-    flex-wrap: wrap;
-}
-
 .placeCard
 {
-    
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-
+    width: auto;
+    max-width: 560px;
     display: grid;
     grid-template-areas:
-    "title"
-    "photo"
-    "description"
-    "location"
-    "button";
+    "photo title"
+    "photo description"
+    "photo location"
+    "photo button"
+    ;
     
 }
 .placeCard figure
@@ -376,7 +355,4 @@ label, input
 {
     grid-area: button;
 }
-
-
-
-
+}

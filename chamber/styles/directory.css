@@ -3,12 +3,13 @@ button
     margin: 10px 0px;
 }
 
-#businesses , #spotlightBusinesses
+#businesses , #spotlightBusinesses, .card
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: green;
+    
 }
 
 
