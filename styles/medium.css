@@ -324,35 +324,5 @@ label, input
     ;
     
 }
-.placeCard figure
-{
-    grid-area: photo;
-}
 
-.placeCard figure img
-
-{
-    width: 300px;
-    height: 200px;
-}
-
-.placeCard h2
-{
-    grid-area: title;
-}
-
-.placeCard p
-{
-    grid-area: description;
-}
-
-.placeCard address
-{
-    grid-area: location;
-}
-
-.placeCard button
-{
-    grid-area: button;
-}
 }

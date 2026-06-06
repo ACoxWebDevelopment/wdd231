@@ -323,8 +323,6 @@ label, input
 .placeCard
 {
     
-    display: flex;
-    flex-direction: column;
     width: 400px;
     text-align: center;
     justify-content: center;
