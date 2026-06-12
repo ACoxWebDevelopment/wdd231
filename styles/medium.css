@@ -328,4 +328,67 @@ label, input
 {
     transform: scale(1.1);
 }
+
+/* **************gallery************* */
+
+.rockCard
+{
+    display: block;
 }
+
+.mineralDetailsButton
+{
+    display: none;
+}
+.specificMineral
+{
+    display: flex;
+}
+
+/* ******************mineral home page */
+
+#gemHero
+{
+    grid-template-columns: 1fr 3fr 1fr;
+    background-image: none;
+}
+
+.center
+{
+    background-image: url("../images/mossmedium.webp");
+    border: 2px solid black;
+}
+
+.rightside, .leftside
+{background-color: darkgreen;}
+
+#gemHero h3, .leftside h3, .rightside h3
+{
+    background-color: rgb(247, 222, 190);
+    text-align: center;
+    width: 75%;
+    margin-bottom: 0px;
+}
+
+#gemHero p, .leftside div, .rightside ul, .rightside p, #current-weather, #forecast-weather
+{
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+#gemHero .center h3
+{
+    background-color: rgba(247,222,190,.8);
+}
+
+#gemHero .center p
+{
+    background-color: rgba(255, 255, 255, .7);
+}
+
+}
+
+
+
+

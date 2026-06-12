@@ -81,6 +81,77 @@ header span
     color: antiquewhite;
 }
 
+
+/* *******************main styling**************** */
+#gemHero
+{
+    background-image: url(../images/mossmedium.webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    position: relative;
+    border: 1px solid black;
+    display: grid;
+    justify-items: center;
+
+}
+
+#gemHero h3, .leftside h3, .rightside h3, #current-weather h3, #forecast-weather h3
+{
+    background-color: rgba(247, 222, 190, .8);
+    text-align: center;
+    width: 75%;
+    margin-bottom: 0px;
+}
+
+#gemHero p, .leftside div, .rightside ul, .rightside p, #current-weather p, #weather-icon, #forecast-weather
+{
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+#forecast-weather p
+{
+     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.leftside, .rightside, .center
+{
+    justify-content: center;
+    justify-items: center;
+}
+.rightside ul
+{
+    padding-left: 0;
+    list-style: none;
+}
+
+.rightside li
+
+{
+    padding: 3px;
+}
+
+#current-weather,
+.heading-bars
+{
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+#weather-icon
+{
+    width: 75%;
+    margin-left: 12.4%;
+}
+
+
+
+
 /* *******************************Footer Styling*********************************** */
 
 footer
@@ -236,7 +307,7 @@ p.pending
 }
 
 /* **********************Style dialog element*/
-#course-details
+#course-details, .mineralDetails
 {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
@@ -320,7 +391,7 @@ label, input
     flex-wrap: wrap;
 }
 
-.placeCard
+.placeCard, .rockCard
 {
     
     width: 400px;
@@ -373,6 +444,36 @@ label, input
 .placeCard button
 {
     grid-area: button;
+}
+
+/* ***************** gallery *********** */
+
+.specificMineral
+{
+    display: none;
+}
+
+.rockCard
+{
+    display: grid;
+    margin-bottom: 40px;
+    justify-items: center;
+}
+
+#rockGallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(247, 222, 190);
+    padding-top: 30px;
+    
+}
+
+.mineralDetailsButton
+{
+    max-width: 100px;
+    margin-top: 15px;
 }
 
 

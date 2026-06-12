@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
 </head>
+
 <body>
     <header>
         <img src="images/feather.svg" alt="site logo">
-        <span>ACox WDD 231 Home Page</span>
+        <span>Three Forks Gem and Mineral Club</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="" id="current-page" class="navitems">Home</a></li>
+            <li><a href="#" id="current-page" class="navitems">Home</a></li>
+            <li><a href="gallery.html">Mineral Gallery</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
 
     <main>
         <h1 id="current"></h1>
+        <div class="home" id="gemHero">
+            <aside class="leftside">
+
+
+                <h3>upcoming events</h3>
+                <p>
+                    6/27 We will be traveling to Ruby Reservoir and looking for garnets. Meet in front of the
+                    library at 7am. It is suggested to bring a shovel, a spray bottle and a 5 gallon bucket. Also
+                    appropriate clothing for the weather.
+                </p>
+
+
+
+                <h3>weather</h3>
+                <section id="current-weather">
+
+                    <p id="town"></p>
+                    <p id="current-temp"></p>
+                    <img src="images/github.svg" alt="weather icon" id="weather-icon">
+                       <p id="weathDesc"></p>
+                    <p id="humidity"></p>
+                 
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </section>
+
+                <section class="heading-bars">
+                    <h3>Weather forecast</h3>
+
+                    <section id="forecast-weather">
+                        <p id="todayTempHigh"></p>
+                        <p id="tomorrowTempHigh"></p>
+                        <p id="dayAfterTempHigh"></p>
+                    </section>
+                </section>
+            </aside>
+
+            <div class="center">
+
+                <h3>club meeting times</h3>
+
+                <p>
+                    The club meets every 2nd Tuesday at the home/workshop of Kris Kringle. He generously allows us
+                    to
+                    store the club cutting and polishing equipment in his workshop
+                </p>
+
+
+
+                <h3>dues</h3>
+
+                <p>Dues are $20/yr per indiviual or $50/yr for a family membership. Membership includes a
+                    subscription
+                    to our monthly newsletter, access to club equipment (contact Kris Kringle 406-555-1234) to
+                    arrange,
+                    and a 20% discount on tickets to the Three Forks Gem and Mineral show. </p>
+
+            </div>
+
+            <aside class="rightside">
+                <h3>general information</h3>
+
+                <p>Please see our gallery for common minerals found in Montana. The list is by no means complete. If you
+                    can't identify a rock, just ask, we'll be happy to help. You can find semi-precious stones pretty
+                    much anywhwere in Montana. See our useful links for some ideas to get started.</p>
+
+                <h3>useful links</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://rockhounding.org/maps/us/montana">Common rockhounding Spots in Montana</a>
+                    </li>
+                    <li>
+                        <a href="https://www.identifyrock.net/tools/stone-identifier">Rock Identification</a>
+                    </li>
+                    <li>
+                        <a href="https://www.rockandmineralshows.com/Location/?displayShows=true">Gem and Mineral
+                            Shows</a>
+                    </li>
+                </ul>
+
+            </aside>
+        </div>
     </main>
 
     <footer>
@@ -32,9 +119,12 @@
             <a href=""><img src="images/microsoft-teams.svg" alt="microsoft teams logo" width="32px" height="32px"></a>
         </div>
 
-        <p>copyright @c</p>
-        <p>Last Modified</p>
+        <p id="copyYear">copyright @c</p>
+        <p id="modified">Last Modified</p>
     </footer>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="chamber/scripts/weather.js" defer></script>
 </body>
+
 </html>
