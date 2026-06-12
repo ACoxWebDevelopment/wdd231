@@ -1,4 +1,4 @@
-import {minerals} from "/data/mineral.mjs";
+import {minerals} from "../data/mineral.mjs";
 
 const mineral= document.querySelector("#rockGallery");
 const mineralDetails = document.querySelector(".mineralDetails");
