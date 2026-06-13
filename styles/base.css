@@ -346,9 +346,17 @@ form, #thankYou
     padding: 10px;
 }
 
-label, input
+.designOne label
 {
-    margin: 5px
+display: flex;
+flex-direction: column;
+margin: 5px;
+padding: 2px;
+}
+
+.designOne input, .designOne textarea
+{
+    margin-top: 5px;
 }
 
 /* ***********membership level card styles**************  */
