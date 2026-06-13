@@ -100,7 +100,7 @@ header span
 #current-weather, .heading-bars
 {
     width: 100%;
-    display: block;
+    display: grid;
     justify-items: center;
 }
 
