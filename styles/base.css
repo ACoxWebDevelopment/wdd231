@@ -97,6 +97,13 @@ header span
 
 }
 
+#current-weather, .heading-bars
+{
+    width: 100%;
+    display: block;
+    justify-items: center;
+}
+
 #gemHero h3, .leftside h3, .rightside h3, #current-weather h3, #forecast-weather h3
 {
     background-color: rgba(247, 222, 190, .8);
@@ -120,6 +127,7 @@ header span
 
 .leftside, .rightside, .center
 {
+    display: grid;
     justify-content: center;
     justify-items: center;
 }
@@ -135,18 +143,12 @@ header span
     padding: 3px;
 }
 
-#current-weather,
-.heading-bars
-{
-    width: 100%;
-    justify-content: center;
-    justify-items: center;
-}
 
 #weather-icon
 {
+    display: block;
     width: 75%;
-    margin-left: 12.4%;
+    margin: 0 auto;
 }
 
 
