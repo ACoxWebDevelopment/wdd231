@@ -351,16 +351,19 @@ label, input
 {
     grid-template-columns: 1fr 3fr 1fr;
     background-image: none;
+    align-items: start;
 }
 
 .center
 {
     background-image: url("../images/mossmedium.webp");
-    border: 2px solid black;
+    height: 100%;
 }
 
 .rightside, .leftside
-{background-color: darkgreen;}
+{background-color: darkgreen;
+height: 100%;
+}
 
 #gemHero h3, .leftside h3, .rightside h3
 {
@@ -368,6 +371,7 @@ label, input
     text-align: center;
     width: 75%;
     margin-bottom: 0px;
+    max-height: 50px;
 }
 
 #gemHero p, .leftside div, .rightside ul, .rightside p, #current-weather, #forecast-weather
@@ -375,6 +379,7 @@ label, input
     width: 75%;
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #gemHero .center h3
