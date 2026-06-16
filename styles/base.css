@@ -104,15 +104,16 @@ header span
     justify-items: center;
 }
 
-#gemHero h3, .leftside h3, .rightside h3, #current-weather h3, #forecast-weather h3
+#gemHero h2, .leftside h2, .rightside h2, #current-weather h2, #forecast-weather h2
 {
     background-color: rgba(247, 222, 190, .8);
     text-align: center;
     width: 75%;
     margin-bottom: 0px;
+    font-size: 120%;
 }
 
-#gemHero p, .leftside div, .rightside ul, .rightside p, #current-weather p, #weather-icon, #forecast-weather
+#gemHero p, .leftside div, .rightside ul, .rightside p, #current-weather p, #forecast-weather
 {
     width: 75%;
     background-color: rgba(255, 255, 255, 0.7);
@@ -120,27 +121,33 @@ header span
     margin-bottom: 0;
 }
 
+#weather-icon
+{
+    background-color: rgba(247, 222, 190, 0.7);
+}
+
 #forecast-weather p
 {
      background-color: rgba(255, 255, 255, 0.2);
 }
 
-.leftside, .rightside div, .center div
+.leftside, .rightside, .center 
 {
     display: grid;
     justify-content: center;
     justify-items: center;
 }
-.rightside ul
-{
-    padding-left: 0;
-    list-style: none;
-}
 
 .rightside li
 
 {
-    padding: 3px;
+    padding: 5px;
+}
+
+.rightside ul
+{
+    list-style-type: none;
+    padding: 0;
 }
 
 
@@ -486,6 +493,5 @@ padding: 2px;
     margin-top: 15px;
 }
 
-/* comment added to resync with github */
 
 
