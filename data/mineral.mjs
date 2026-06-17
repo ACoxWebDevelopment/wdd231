@@ -30,5 +30,5 @@ export const minerals =
         "name": "Topaz",
         "photo": "images/topaz.webp",
         "description": "Topaz is a silicate mineral made of aluminum and fluorine with the chemical formula Al2SiO4(F, OH)2. It is used as a gemstone in jewelry and other adornments. Common topaz in its natural state is colorless, though trace element impurities can make it pale blue or golden-brown to yellow-orange.[7] Topaz is often treated with heat or radiation to make it a deep blue, reddish-orange, pale green, pink, or purple."
-    }
+    }  
 ]

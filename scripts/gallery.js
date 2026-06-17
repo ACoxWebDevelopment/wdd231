@@ -19,7 +19,7 @@ minerals.forEach(element => {
     rockCard.appendChild(rock);
     rockCard.appendChild(rockPic);
     rockCard.appendChild(details);
-    rockCard.appendChild(learnMore);
+    rockCard.appendChild(learnMore);  
     mineral.appendChild(rockCard);
 
     learnMore.addEventListener("click",() => {
